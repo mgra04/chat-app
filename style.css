@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --text-pale-violet: hsl(276, 100%, 81%);
+  --text-moderate-violet: hsl(276, 55%, 52%);
+  --text-d-desaturated-violet: hsl(271, 15%, 43%);
+  --text-vd-desaturated-violet: hsl(206, 7%, 79%);
+  --text-d-greyish-violet: hsl(271, 36%, 24%);
+  --text-greyish-blue: hsl(268, 7%, 64%);
+
+  --bg-light-magenta: hsl(293, 100%, 63%);
+  --bg-light-violet: hsl(264, 100%, 61%);
+
+  --sec-white: hsl(0, 0%, 100%);
+  --sec-l-greyish-violet: hsl(270, 20%, 96%);
+  --sec-vl-magenta: hsl(289, 100%, 72%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ############## */
+/* PHONE */
+/* ############## */
+
+/* GENERAL STYLES */
+
+.align__right {
+  align-self: flex-end;
+}
+
+.flex__message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.message-box {
+  max-width: 12.8rem;
+  padding: 0.6rem 0.8rem;
+}
+
+.clr__light-violet {
+  background-color: hsl(276, 41%, 93%);
+  border-radius: 1rem 1rem 1rem 0.4rem;
+}
+
+.clr__white {
+  background-color: var(--sec-white);
+  border-radius: 1rem 1rem 0.4rem 1rem;
+  margin-left: auto;
+}
+
+.chat-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+}
+
+.clr__violet {
+  color: var(--text-moderate-violet);
+}
+
+.clr__desaturated-violet {
+  color: var(--text-d-desaturated-violet);
+}
+
+.text__clr-white {
+  color: var(--sec-white);
+}
+
+/* SPECIFIED STYLES */
+
+.phone {
+  background-color: var(--sec-white);
+  position: relative;
+  width: 24.7rem;
+  height: 50.5rem;
+  border-radius: 3rem;
+  box-shadow: 0 3rem 6rem -1rem rgba(62, 39, 83, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.island {
+  background-color: var(--sec-white);
+  position: absolute;
+  width: 12.9rem;
+  height: 2.9rem;
+  border-radius: 0 0 1.4rem 1.4rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.screen {
+  background-color: var(--sec-l-greyish-violet);
+  position: relative;
+  width: 22.8rem;
+  height: 48.3rem;
+  padding: 0 0.75rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(62, 39, 83, 0.05);
+  overflow: hidden;
+}
+
+.top {
+  background: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+  position: absolute;
+  width: 22.8rem;
+  height: 6.6rem;
+  border-radius: 2rem 2rem 0.6rem 0.6rem;
+  box-shadow: 0 0 1.3rem 0 rgba(62, 39, 83, 0.25);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 0 1.65rem 0 1.55rem;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.profile-img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: 1px solid var(--sec-white);
+  overflow: hidden;
+}
+
+.profile-img img {
+  width: 100%;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.name {
+  color: var(--sec-white);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.status-text {
+  color: var(--text-pale-violet);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.messages-container {
+  margin-top: 7.7rem;
+  margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.images {
+  display: flex;
+  gap: 0.8rem;
+  /* justify-content: flex-end; */
+}
+
+.images img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 0.5rem -0.5rem rgba(62, 39, 83, 0.05);
+}
+
+.offer__box {
+  background: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+  width: 16rem;
+  border-radius: 1rem 1rem 1rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.6rem 1rem 0.8rem;
+}
+
+.left-side {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #e472ff;
+  border-radius: 50%;
+}
+
+.price {
+  color: var(--sec-white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+}
+
+.type__box {
+  background-color: var(--sec-white);
+  width: 21.3rem;
+  height: 3.4rem;
+  border-radius: 999px;
+  padding-left: 1.942rem;
+  padding-right: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.type-text {
+  color: var(--text-vd-desaturated-violet);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: -0.07px;
+}
+
+/* ############## */
+/* REST */
+/* ############## */
+
+.bg-component__left {
+  background: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+  width: 51rem;
+  height: 101.8rem;
+  border-radius: 999px;
+  position: absolute;
+  left: -6.25%;
+  top: -35.333%;
+  z-index: -1;
+}
+
+.bg-component__right {
+  background: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+  opacity: 0.03;
+  width: 51rem;
+  height: 101.8rem;
+  border-radius: 999px;
+  position: absolute;
+  right: -12.847%;
+  bottom: -37.444%;
+  z-index: -1;
+}
+
+.site-text {
+  max-width: 44.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.title {
+  color: var(--text-d-greyish-violet);
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.description {
+  color: var(--text-greyish-blue);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.site-content {
+  max-width: 81.7rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12.5rem;
+  align-items: center;
+
+  /* only for purpose to reproduce preview img */
+  margin-left: 9.6rem;
+}
+
+@media (max-width: 60rem) {
+  .site-content {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-row: 2fr 1fr;
+    gap: 6.4em;
+    place-items: center;
+    margin-left: 0;
+    padding: 6.4em 3.2em;
+  }
+
+  .site-text {
+    max-width: 30em;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .bg-component__left {
+    top: -53%;
+    left: -86%;
+  }
+
+  .bg-component__right {
+    bottom: -53%;
+    right: -86%;
+  }
+}
